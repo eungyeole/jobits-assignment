@@ -10,9 +10,11 @@ const SideBarDepths : FC<SideBarDepthsProps> = ({depths}) =>{
         <ul>
             {
                 depths.map((i, index)=>(
-                    <ActiveLink key={index} href={i.href}>
-                        <a>{i.name}</a>
-                    </ActiveLink>
+                    <li key={index}>
+                        <ActiveLink href={i.href}>
+                            <a>{i.name}</a>
+                        </ActiveLink>
+                    </li>
                 ))
             }
         </ul>

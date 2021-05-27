@@ -1,22 +1,12 @@
 import { FC } from "react";
 import * as S from './styles';
 import SideBarDepths from '../SideBarDepths/SideBarDepths'
+import { depthsinfo } from '../../constances/depths/depthsinfo'
 interface SideBarProps {}
-const depths = [
-    {
-        href : '/infinite',
-        name : '무한 스크롤'
-    },
-    {
-        href : '/page',
-        name : '페이지 네이션'
-    },
-    
-] 
 const SideBar : FC<SideBarProps> = () => {
     return(
         <S.Wrapper>
-            <SideBarDepths depths={depths}></SideBarDepths>
+            <SideBarDepths depths={depthsinfo}></SideBarDepths>
         </S.Wrapper>
     )
 }
