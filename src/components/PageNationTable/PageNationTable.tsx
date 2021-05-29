@@ -1,6 +1,11 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
+import recruitment from "../../libs/api/recruitment";
+import { IRecruitmentData } from "../../libs/interfaces";
 import * as S from './styles'
-const PageNationTable : FC = () => {
+interface PageNationTable {
+    data : Array<IRecruitmentData>
+}
+const PageNationTable : FC<PageNationTable> = ({data}) => {
     return(
         <S.Wrapper>
             <h3>채용의뢰</h3>
@@ -12,11 +17,17 @@ const PageNationTable : FC = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>어쩌구 기업</td>
-                        <td>등록일</td>
-                    </tr>
-                  
+                    {
+                        data.map((i,index)=>{
+                            return(
+                                <tr key={index}>
+                                    <td>{i.name}</td>
+                                    <td>{i.createdAt}</td>
+                                </tr>
+                            )
+                        })
+                    }
+                    
                 </tbody>
             </S.PageNationTableWrapper>
         </S.Wrapper>
