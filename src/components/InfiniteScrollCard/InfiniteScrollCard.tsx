@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { IScrollData } from '../../libs/interfaces';
+import { IRecruitmentData } from '../../libs/interfaces';
 import * as S from './styles'
-interface InfiniteScrollProps extends IScrollData{}
+interface InfiniteScrollProps extends IRecruitmentData{}
 const InfiniteScrollCard : FC<InfiniteScrollProps> = ({name, createdAt}) => {
     return(
         <S.Wrapper>
