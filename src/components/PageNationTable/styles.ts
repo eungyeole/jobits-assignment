@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     height: 100%;
     padding: 30px 50px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    overflow: scroll;
     & h3{
         margin-bottom: 20px;
     }
