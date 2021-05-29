@@ -2253,6 +2253,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"immer@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "immer@npm:9.0.2"
+  checksum: 71487285a890e6fb92ed8950ce3b5b0e2546321bb4dfe82a7395fbc3f24308b0481387b5939fd35681bac8e36161d903f2bcd99ac045acd25ed3a7f21c629bfd
+  languageName: node
+  linkType: hard
+
 "import-fresh@npm:^3.1.0":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
@@ -2546,6 +2553,7 @@ fsevents@~2.3.1:
     "@types/react": ^17.0.8
     "@yarnpkg/pnpify": ^3.0.0-rc.3
     axios: ^0.21.1
+    immer: ^9.0.2
     next: 10.2.3
     react: 17.0.2
     react-dom: 17.0.2
