@@ -3,6 +3,7 @@ export const Wrapper = styled.div`
     background: #444444;
     width: 225px;
     height: 100vh;
+    float: left;
     & ul{
         padding: 80px 0;
         display: flex;
